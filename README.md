@@ -10,6 +10,5 @@ A Simple demonstration of Genetic Algorithm
 Install the above Python Modules.
 Then type the following commands in the root directory of the project:
 ```
-export FLASK_APP=flaskgui.py
-flask run
+python3 flaskgui.py
 ```

@@ -1,9 +1,9 @@
 from flask import Flask, render_template, flash, request
-from wtforms import Form, TextField, TextAreaField, validators, StringField, SubmitField
+#from wtforms import Form, TextField, TextAreaField, validators, StringField, SubmitField
 import genetic
 #app = Flask(__name__)
 
-app = Flask(__name__, static_url_path='/static') 
+app = Flask(__name__, static_url_path='/static')
 
 stringList = ['Please Enter an Input!']
 
@@ -19,3 +19,6 @@ def index_post():
 	# jsonObject['answer'] = text
 	stringList = genetic.abc(word)
 	return render_template('index.html' , stringList=stringList)
+
+if __name__ == '__main__':
+	app.run(host='0.0.0.0', port = 3000)
